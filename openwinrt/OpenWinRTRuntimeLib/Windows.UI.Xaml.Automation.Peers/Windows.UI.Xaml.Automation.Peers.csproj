@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{017A260A-E8CC-4237-95AA-F0DAC1802D9A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Automation.Peers</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.UI.Xaml.Automation.Provider" />
+    <Reference Include="Windows.UI.Xaml.Controls" />
+    <Reference Include="Windows.UI.Xaml.Automation" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Xaml.Controls.Primitives" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ITextBlockAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ITextBlockAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IPasswordBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IPasswordBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ITextBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ITextBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IImageAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IImageAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IButtonBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IButtonBaseAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IButtonAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRepeatButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRepeatButtonAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IHyperlinkButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IHyperlinkButtonAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IThumbAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IThumbAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IProgressRingAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IProgressRingAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAppBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAppBarAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IToggleButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IToggleButtonAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IToggleSwitchAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IToggleSwitchAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISemanticZoomAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISemanticZoomAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IMediaPlayerAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IMediaPlayerAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRadioButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRadioButtonAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ICheckBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ICheckBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRangeBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRangeBaseAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IProgressBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IProgressBarAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISliderAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISliderAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IScrollBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IScrollBarAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IItemsControlAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IItemsControlAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISelectorAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISelectorAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichTextBlockAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichTextBlockAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichTextBlockOverflowAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichTextBlockOverflowAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewBaseAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IScrollViewerAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IScrollViewerAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichEditBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IRichEditBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISelectorItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ISelectorItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxItemDataAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListBoxItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewItemDataAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IListViewItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewItemDataAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGridViewItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewItemDataAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFlipViewItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxItemDataAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGroupItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IGroupItemAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IComboBoxAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IMediaElementAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IMediaElementAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\AutomationControlType.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\AutomationEvents.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\PatternInterface.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\AutomationOrientation.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAutomationPeerOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAutomationPeerProtected.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\AutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAutomationPeerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFrameworkElementAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFrameworkElementAutomationPeerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\IFrameworkElementAutomationPeerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\FrameworkElementAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\TextBlockAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\PasswordBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\TextBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ImageAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ButtonBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ThumbAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ProgressRingAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\MediaPlayerAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RichTextBlockAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RichTextBlockOverflowAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RichEditBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListBoxItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\GridViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\FlipViewItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ComboBoxItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\GroupItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\MediaElementAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RepeatButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\HyperlinkButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RangeBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ProgressBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\SliderAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ScrollBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ScrollViewerAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\AppBarAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ToggleButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ToggleSwitchAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\SemanticZoomAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\RadioButtonAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\CheckBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ItemsControlAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\SelectorAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListViewBaseAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\GridViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\FlipViewAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ComboBoxAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\SelectorItemAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListBoxItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ListViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\GridViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\FlipViewItemDataAutomationPeer.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Peers\ComboBoxItemDataAutomationPeer.cs" />
+  </ItemGroup>
+</Project>

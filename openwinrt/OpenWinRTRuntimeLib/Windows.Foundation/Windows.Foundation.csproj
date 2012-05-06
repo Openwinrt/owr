@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A01E3C33-7085-4923-85A9-514E1191F38F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Foundation</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Foundation\Collections\CollectionChange.cs" />
+    <Compile Include="Windows\Foundation\Collections\IVectorChangedEventArgs.cs" />
+    <Compile Include="Windows\Foundation\IUriRuntimeClass.cs" />
+    <Compile Include="Windows\Foundation\Uri.cs" />
+    <Compile Include="Windows\Foundation\IUriRuntimeClassFactory.cs" />
+    <Compile Include="Windows\Foundation\IGetActivationFactory.cs" />
+    <Compile Include="Windows\Foundation\IClosable.cs" />
+    <Compile Include="Windows\Foundation\Metadata\WebHostHiddenAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\VariantAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\HasVariantAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\DualApiPartitionAttribute.cs" />
+    <Compile Include="Windows\Foundation\PropertyType.cs" />
+    <Compile Include="Windows\Foundation\Point.cs" />
+    <Compile Include="Windows\Foundation\Size.cs" />
+    <Compile Include="Windows\Foundation\Rect.cs" />
+    <Compile Include="Windows\Foundation\DateTime.cs" />
+    <Compile Include="Windows\Foundation\TimeSpan.cs" />
+    <Compile Include="Windows\Foundation\IPropertyValue.cs" />
+    <Compile Include="Windows\Foundation\IPropertyValueStatics.cs" />
+    <Compile Include="Windows\Foundation\PropertyValue.cs" />
+    <Compile Include="Windows\Foundation\Collections\IPropertySet.cs" />
+    <Compile Include="Windows\Foundation\Collections\PropertySet.cs" />
+    <Compile Include="Windows\Foundation\AsyncActionCompletedHandler.cs" />
+    <Compile Include="Windows\Foundation\Diagnostics\ErrorOptions.cs" />
+    <Compile Include="Windows\Foundation\Diagnostics\IErrorReportingSettings.cs" />
+    <Compile Include="Windows\Foundation\Diagnostics\RuntimeBrokerErrorSettings.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ActivatableAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\VersionAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\AllowMultipleAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\AttributeUsageAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\AttributeTargets.cs" />
+    <Compile Include="Windows\Foundation\Metadata\DefaultOverloadAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\DefaultAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\GuidAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\InterfaceGroupAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ComposableAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\CompositionType.cs" />
+    <Compile Include="Windows\Foundation\Metadata\OverloadAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\StaticAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\OverridableAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ProtectedAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ThreadingAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ThreadingModel.cs" />
+    <Compile Include="Windows\Foundation\Metadata\MarshalingBehaviorAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\MarshalingType.cs" />
+    <Compile Include="Windows\Foundation\Metadata\ExclusiveToAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\LengthIsAttribute.cs" />
+    <Compile Include="Windows\Foundation\Metadata\RangeAttribute.cs" />
+    <Compile Include="Windows\Foundation\AsyncStatus.cs" />
+    <Compile Include="Windows\Foundation\EventRegistrationToken.cs" />
+    <Compile Include="Windows\Foundation\HResult.cs" />
+    <Compile Include="Windows\Foundation\IAsyncInfo.cs" />
+    <Compile Include="Windows\Foundation\IAsyncAction.cs" />
+    <Compile Include="Windows\Foundation\Collections\IIterable!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IIterator!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IVectorView!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IVector!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IKeyValuePair!2.cs" />
+    <Compile Include="Windows\Foundation\Collections\IMap!2.cs" />
+    <Compile Include="Windows\Foundation\Collections\IMapView!2.cs" />
+    <Compile Include="Windows\Foundation\Collections\VectorChangedEventHandler!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IObservableVector!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\IMapChangedEventArgs!1.cs" />
+    <Compile Include="Windows\Foundation\Collections\MapChangedEventHandler!2.cs" />
+    <Compile Include="Windows\Foundation\Collections\IObservableMap!2.cs" />
+    <Compile Include="Windows\Foundation\AsyncOperationWithProgressCompletedHandler!2.cs" />
+    <Compile Include="Windows\Foundation\IAsyncOperationWithProgress!2.cs" />
+    <Compile Include="Windows\Foundation\AsyncOperationCompletedHandler!1.cs" />
+    <Compile Include="Windows\Foundation\IAsyncOperation!1.cs" />
+    <Compile Include="Windows\Foundation\AsyncActionWithProgressCompletedHandler!1.cs" />
+    <Compile Include="Windows\Foundation\IAsyncActionWithProgress!1.cs" />
+    <Compile Include="Windows\Foundation\AsyncOperationProgressHandler!2.cs" />
+    <Compile Include="Windows\Foundation\AsyncActionProgressHandler!1.cs" />
+    <Compile Include="Windows\Foundation\IReference!1.cs" />
+    <Compile Include="Windows\Foundation\IReferenceArray!1.cs" />
+    <Compile Include="Windows\Foundation\TypedEventHandler!2.cs" />
+    <Compile Include="Windows\Foundation\EventHandler!1.cs" />
+  </ItemGroup>
+</Project>

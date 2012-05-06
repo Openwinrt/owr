@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{308DF94C-FA54-440A-86BB-19DF2C25B713}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Core</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.System" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Popups" />
+    <Reference Include="Windows.Devices.Input" />
+    <Reference Include="Windows.UI.Input" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Core\IInternalCoreWindow.cs" />
+    <Compile Include="Windows\UI\Core\ViewStateChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ContextMenuRequestedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindowActivationState.cs" />
+    <Compile Include="Windows\UI\Core\CoreCursorType.cs" />
+    <Compile Include="Windows\UI\Core\CoreDispatcherPriority.cs" />
+    <Compile Include="Windows\UI\Core\CoreProcessEventsOption.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindowFlowDirection.cs" />
+    <Compile Include="Windows\UI\Core\CoreVirtualKeyStates.cs" />
+    <Compile Include="Windows\UI\Core\CoreAcceleratorKeyEventType.cs" />
+    <Compile Include="Windows\UI\Core\CoreProximityEvaluationScore.cs" />
+    <Compile Include="Windows\UI\Core\CorePhysicalKeyStatus.cs" />
+    <Compile Include="Windows\UI\Core\CoreProximityEvaluation.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IViewStateChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IContextMenuRequestedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IAutomationProviderRequestedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ICharacterReceivedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IInputEnabledEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IKeyEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IPointerEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ITouchHitTestingEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IWindowActivatedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IWindowSizeChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\IVisibilityChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindow.cs" />
+    <Compile Include="Windows\UI\Core\CoreDispatcher.cs" />
+    <Compile Include="Windows\UI\Core\CoreCursor.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindow.cs" />
+    <Compile Include="Windows\UI\Core\WindowActivatedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\AutomationProviderRequestedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\CharacterReceivedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindowEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\InputEnabledEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\KeyEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\PointerEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\TouchHitTestingEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\WindowSizeChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\VisibilityChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowStatic.cs" />
+    <Compile Include="Windows\UI\Core\InvokedHandler.cs" />
+    <Compile Include="Windows\UI\Core\InvokedHandlerArgs.cs" />
+    <Compile Include="Windows\UI\Core\DispatchedHandler.cs" />
+    <Compile Include="Windows\UI\Core\IAcceleratorKeyEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ICoreAcceleratorKeys.cs" />
+    <Compile Include="Windows\UI\Core\AcceleratorKeyEventArgs.cs" />
+    <Compile Include="Windows\UI\Core\ICoreDispatcher.cs" />
+    <Compile Include="Windows\UI\Core\IInvokedHandlerArgs.cs" />
+    <Compile Include="Windows\UI\Core\CoreAcceleratorKeys.cs" />
+    <Compile Include="Windows\UI\Core\ICoreCursor.cs" />
+    <Compile Include="Windows\UI\Core\ICoreCursorFactory.cs" />
+    <Compile Include="Windows\UI\Core\IInitializeWithCoreWindow.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowDialog.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowDialogFactory.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindowDialog.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowFlyout.cs" />
+    <Compile Include="Windows\UI\Core\ICoreWindowFlyoutFactory.cs" />
+    <Compile Include="Windows\UI\Core\CoreWindowFlyout.cs" />
+  </ItemGroup>
+</Project>

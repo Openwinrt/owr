@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4865FB44-D199-4770-867D-106A3CC7BE29}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Web.AtomPub</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Web.Syndication" />
+    <Reference Include="Windows.Security.Credentials" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Storage.Streams" />
+    <Reference Include="Windows.Data.Xml.Dom" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Web\AtomPub\IResourceCollection.cs" />
+    <Compile Include="Windows\Web\AtomPub\ResourceCollection.cs" />
+    <Compile Include="Windows\Web\AtomPub\IWorkspace.cs" />
+    <Compile Include="Windows\Web\AtomPub\Workspace.cs" />
+    <Compile Include="Windows\Web\AtomPub\IServiceDocument.cs" />
+    <Compile Include="Windows\Web\AtomPub\ServiceDocument.cs" />
+    <Compile Include="Windows\Web\AtomPub\IAtomPubClient.cs" />
+    <Compile Include="Windows\Web\AtomPub\AtomPubClient.cs" />
+    <Compile Include="Windows\Web\AtomPub\IAtomPubClientFactory.cs" />
+  </ItemGroup>
+</Project>

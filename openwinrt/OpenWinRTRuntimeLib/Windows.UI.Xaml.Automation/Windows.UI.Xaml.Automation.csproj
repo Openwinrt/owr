@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A9739C3-210A-45FA-813A-7C26B4229FBD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Automation</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IAutomationProperty.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\AutomationProperty.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\DockPosition.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ExpandCollapseState.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ScrollAmount.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\RowOrColumnMajor.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ToggleState.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\WindowVisualState.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\WindowInteractionState.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\SupportedTextSelection.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IAutomationProperties.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IAutomationPropertiesStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\AutomationProperties.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IAutomationElementIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IAutomationElementIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\AutomationElementIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IDockPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IDockPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\DockPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IExpandCollapsePatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IExpandCollapsePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ExpandCollapsePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IGridItemPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IGridItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\GridItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IGridPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IGridPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\GridPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IMultipleViewPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IMultipleViewPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\MultipleViewPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IRangeValuePatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IRangeValuePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\RangeValuePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IScrollPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IScrollPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ScrollPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ISelectionItemPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ISelectionItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\SelectionItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ISelectionPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ISelectionPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\SelectionPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITableItemPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITableItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\TableItemPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITablePatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITablePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\TablePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITogglePatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITogglePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\TogglePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITransformPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ITransformPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\TransformPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IValuePatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IValuePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\ValuePatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IWindowPatternIdentifiersStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\IWindowPatternIdentifiers.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\WindowPatternIdentifiers.cs" />
+  </ItemGroup>
+</Project>

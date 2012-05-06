@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{046BDC2B-E3DF-4C1C-818A-C37BFA4CC605}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Automation.Provider</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.UI.Xaml.Automation" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Xaml.Automation.Text" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IIRawElementProviderSimple.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IRawElementProviderSimple.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IInvokeProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IDockProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IDragProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IDropTargetProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IExpandCollapseProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IGridItemProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IGridProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IMultipleViewProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IRangeValueProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IScrollItemProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IScrollProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ISelectionItemProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ISelectionProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITableItemProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITableProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITextRangeProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITextProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITextProvider2.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITextChildProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IToggleProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\ITransformProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IValueProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IWindowProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IItemContainerProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IVirtualizedItemProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Automation\Provider\IAnnotationProvider.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD2A47D4-196A-407E-9060-5AB2EC67557B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Media.Protection</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Media\Protection\MediaProtectionManager.cs" />
+    <Compile Include="Windows\Media\Protection\ServiceRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Protection\ComponentLoadFailedEventArgs.cs" />
+    <Compile Include="Windows\Media\Protection\MediaProtectionServiceCompletion.cs" />
+    <Compile Include="Windows\Media\Protection\RevocationAndRenewalInformation.cs" />
+    <Compile Include="Windows\Media\Protection\RevocationAndRenewalItem.cs" />
+    <Compile Include="Windows\Media\Protection\ServiceRequestedEventHandler.cs" />
+    <Compile Include="Windows\Media\Protection\RebootNeededEventHandler.cs" />
+    <Compile Include="Windows\Media\Protection\ComponentLoadFailedEventHandler.cs" />
+    <Compile Include="Windows\Media\Protection\IMediaProtectionManager.cs" />
+    <Compile Include="Windows\Media\Protection\IMediaProtectionServiceCompletion.cs" />
+    <Compile Include="Windows\Media\Protection\IServiceRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Protection\IMediaProtectionServiceRequest.cs" />
+    <Compile Include="Windows\Media\Protection\IComponentLoadFailedEventArgs.cs" />
+    <Compile Include="Windows\Media\Protection\IRevocationAndRenewalInformation.cs" />
+    <Compile Include="Windows\Media\Protection\RevocationAndRenewalReasons.cs" />
+    <Compile Include="Windows\Media\Protection\IRevocationAndRenewalItem.cs" />
+  </ItemGroup>
+</Project>

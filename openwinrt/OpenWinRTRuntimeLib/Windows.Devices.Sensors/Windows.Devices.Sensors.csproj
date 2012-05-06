@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A852C8C4-DDA7-49BD-BC1B-9DB682FFF137}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Devices.Sensors</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Devices\Sensors\IAccelerometerStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\Accelerometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\IAccelerometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\AccelerometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\AccelerometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\AccelerometerShakenEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IAccelerometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\IAccelerometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IAccelerometerShakenEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IInclinometerStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\Inclinometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\IInclinometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\InclinometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\InclinometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IInclinometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\IInclinometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IGyrometerStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\Gyrometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\IGyrometer.cs" />
+    <Compile Include="Windows\Devices\Sensors\GyrometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\GyrometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IGyrometerReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\IGyrometerReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ICompassStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\Compass.cs" />
+    <Compile Include="Windows\Devices\Sensors\ICompass.cs" />
+    <Compile Include="Windows\Devices\Sensors\CompassReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\CompassReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ICompassReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\ICompassReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ILightSensorStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\LightSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\ILightSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\LightSensorReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\LightSensorReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ILightSensorReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\ILightSensorReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ISensorRotationMatrix.cs" />
+    <Compile Include="Windows\Devices\Sensors\ISensorQuaternion.cs" />
+    <Compile Include="Windows\Devices\Sensors\SensorRotationMatrix.cs" />
+    <Compile Include="Windows\Devices\Sensors\SensorQuaternion.cs" />
+    <Compile Include="Windows\Devices\Sensors\IOrientationSensorStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\OrientationSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\IOrientationSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\OrientationSensorReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\OrientationSensorReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\IOrientationSensorReading.cs" />
+    <Compile Include="Windows\Devices\Sensors\IOrientationSensorReadingChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\SimpleOrientation.cs" />
+    <Compile Include="Windows\Devices\Sensors\ISimpleOrientationSensorStatics.cs" />
+    <Compile Include="Windows\Devices\Sensors\SimpleOrientationSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\ISimpleOrientationSensor.cs" />
+    <Compile Include="Windows\Devices\Sensors\SimpleOrientationSensorOrientationChangedEventArgs.cs" />
+    <Compile Include="Windows\Devices\Sensors\ISimpleOrientationSensorOrientationChangedEventArgs.cs" />
+  </ItemGroup>
+</Project>

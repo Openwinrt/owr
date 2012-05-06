@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ABB01F9-60AA-4B88-A67D-E52AAD2F2E94}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Media.Devices</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Media.MediaProperties" />
+    <Reference Include="Windows.Media.Capture" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Media\Devices\TelephonyKey.cs" />
+    <Compile Include="Windows\Media\Devices\IDialRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\DialRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\IRedialRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\RedialRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\IKeypadPressedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\KeypadPressedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\CallControlEventHandler.cs" />
+    <Compile Include="Windows\Media\Devices\CallControl.cs" />
+    <Compile Include="Windows\Media\Devices\DialRequestedEventHandler.cs" />
+    <Compile Include="Windows\Media\Devices\RedialRequestedEventHandler.cs" />
+    <Compile Include="Windows\Media\Devices\KeypadPressedEventHandler.cs" />
+    <Compile Include="Windows\Media\Devices\ICallControl.cs" />
+    <Compile Include="Windows\Media\Devices\ICallControlStatics.cs" />
+    <Compile Include="Windows\Media\Devices\AudioDeviceRole.cs" />
+    <Compile Include="Windows\Media\Devices\IDefaultAudioDeviceChangedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\IMediaDeviceStatics.cs" />
+    <Compile Include="Windows\Media\Devices\DefaultAudioCaptureDeviceChangedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\DefaultAudioRenderDeviceChangedEventArgs.cs" />
+    <Compile Include="Windows\Media\Devices\MediaDevice.cs" />
+    <Compile Include="Windows\Media\Devices\AudioDeviceController.cs" />
+    <Compile Include="Windows\Media\Devices\VideoDeviceController.cs" />
+    <Compile Include="Windows\Media\Devices\IMediaDeviceController.cs" />
+    <Compile Include="Windows\Media\Devices\IAudioDeviceController.cs" />
+    <Compile Include="Windows\Media\Devices\IVideoDeviceController.cs" />
+    <Compile Include="Windows\Media\Devices\MediaDeviceControl.cs" />
+    <Compile Include="Windows\Media\Devices\IMediaDeviceControl.cs" />
+    <Compile Include="Windows\Media\Devices\MediaDeviceControlCapabilities.cs" />
+    <Compile Include="Windows\Media\Devices\IMediaDeviceControlCapabilities.cs" />
+    <Compile Include="Windows\Media\Devices\IAdvancedVideoCaptureDeviceController.cs" />
+  </ItemGroup>
+</Project>

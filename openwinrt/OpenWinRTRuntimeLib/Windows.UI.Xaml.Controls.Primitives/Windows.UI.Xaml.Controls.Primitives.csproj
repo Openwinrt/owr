@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB30D5E7-A63C-4A6F-8052-D9625E5F290D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Controls.Primitives</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.UI.Xaml.Controls" />
+    <Reference Include="Windows.UI.Xaml.Input" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Xaml.Media.Animation" />
+    <Reference Include="Windows.UI.Xaml.Media" />
+    <Reference Include="Windows.UI.Xaml.Markup" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ScrollEventType.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\GeneratorDirection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\PlacementMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\TickPlacement.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ScrollingIndicatorMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\SliderSnapsTo.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\SnapPointsAlignment.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragStartedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragDeltaEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragCompletedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ScrollEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ItemsChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ItemsChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\RangeBaseValueChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IItemContainerGenerator.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IListViewItemTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IGridViewItemTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IComboBoxTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToolTipTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IProgressBarTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IProgressRingTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToggleSwitchTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToggleButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToggleButtonOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToggleButtonStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IToggleButtonFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRepeatButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRepeatButtonStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IButtonBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IButtonBaseStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IButtonBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IScrollInfo.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IScrollSnapPointsInfo.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IScrollBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IScrollBarStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IScrollEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragStartedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragStartedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragDeltaEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragDeltaEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragCompletedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IDragCompletedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRangeBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRangeBaseOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRangeBaseStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRangeBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IThumb.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IThumbStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IPopup.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IPopupStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelectorStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelectorFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelectorItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelectorItemStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ISelectorItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IItemsChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRecyclingItemContainerGenerator.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ITickBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ITickBarStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IOrientedVirtualizingPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IOrientedVirtualizingPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IRangeBaseValueChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ProgressRingTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ToggleSwitchTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ComboBoxTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ProgressBarTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\GridViewItemTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ListViewItemTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ToolTipTemplateSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ComponentResourceLocation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\EdgeTransitionLocation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\AnimationDirection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\GeneratorPosition.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IGeneratorPositionHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\IGeneratorPositionHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\GeneratorPositionHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragStartedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragDeltaEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\DragCompletedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ScrollEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\RangeBaseValueChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\Popup.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\TickBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\OrientedVirtualizingPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\RangeBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ScrollBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\Thumb.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\Selector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ButtonBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ToggleButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\RepeatButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\SelectorItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ILayoutInformation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\ILayoutInformationStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Primitives\LayoutInformation.cs" />
+  </ItemGroup>
+</Project>

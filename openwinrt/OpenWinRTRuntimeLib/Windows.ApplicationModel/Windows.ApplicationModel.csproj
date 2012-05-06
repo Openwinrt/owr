@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91967772-A95A-4376-B0CB-7FA9FC748820}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.ApplicationModel</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Storage" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\ApplicationModel\SuspendingEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\ISuspendingDeferral.cs" />
+    <Compile Include="Windows\ApplicationModel\SuspendingDeferral.cs" />
+    <Compile Include="Windows\ApplicationModel\ISuspendingOperation.cs" />
+    <Compile Include="Windows\ApplicationModel\SuspendingOperation.cs" />
+    <Compile Include="Windows\ApplicationModel\ISuspendingEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\PackageVersion.cs" />
+    <Compile Include="Windows\ApplicationModel\IPackageId.cs" />
+    <Compile Include="Windows\ApplicationModel\PackageId.cs" />
+    <Compile Include="Windows\ApplicationModel\IPackage.cs" />
+    <Compile Include="Windows\ApplicationModel\Package.cs" />
+    <Compile Include="Windows\ApplicationModel\IPackageStatics.cs" />
+    <Compile Include="Windows\ApplicationModel\IDesignModeStatics.cs" />
+    <Compile Include="Windows\ApplicationModel\DesignMode.cs" />
+  </ItemGroup>
+</Project>
