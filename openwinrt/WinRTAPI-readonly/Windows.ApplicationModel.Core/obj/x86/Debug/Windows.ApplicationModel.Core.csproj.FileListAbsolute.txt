@@ -1,0 +1,1 @@
+E:\src\OpenWinRTRuntimeLib\Windows.ApplicationModel.Core\obj\x86\Debug\Windows.ApplicationModel.Core.csprojResolveAssemblyReference.cache

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1A57B68-42F7-4223-AD00-F4CEFFF8A1B5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Storage.Streams</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Storage" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Storage\Streams\ByteOrder.cs" />
+    <Compile Include="Windows\Storage\Streams\UnicodeEncoding.cs" />
+    <Compile Include="Windows\Storage\Streams\DataReaderLoadOperation.cs" />
+    <Compile Include="Windows\Storage\Streams\IDataReader.cs" />
+    <Compile Include="Windows\Storage\Streams\IDataReaderFactory.cs" />
+    <Compile Include="Windows\Storage\Streams\DataReader.cs" />
+    <Compile Include="Windows\Storage\Streams\IDataReaderStatics.cs" />
+    <Compile Include="Windows\Storage\Streams\DataWriterStoreOperation.cs" />
+    <Compile Include="Windows\Storage\Streams\IDataWriter.cs" />
+    <Compile Include="Windows\Storage\Streams\IDataWriterFactory.cs" />
+    <Compile Include="Windows\Storage\Streams\DataWriter.cs" />
+    <Compile Include="Windows\Storage\Streams\IBuffer.cs" />
+    <Compile Include="Windows\Storage\Streams\InputStreamOptions.cs" />
+    <Compile Include="Windows\Storage\Streams\IContentTypeProvider.cs" />
+    <Compile Include="Windows\Storage\Streams\StreamReadOperation.cs" />
+    <Compile Include="Windows\Storage\Streams\StreamWriteOperation.cs" />
+    <Compile Include="Windows\Storage\Streams\StreamFlushOperation.cs" />
+    <Compile Include="Windows\Storage\Streams\IRandomAccessStreamReference.cs" />
+    <Compile Include="Windows\Storage\Streams\IInputStreamReference.cs" />
+    <Compile Include="Windows\Storage\Streams\IRandomAccessStreamStatics.cs" />
+    <Compile Include="Windows\Storage\Streams\RandomAccessStream.cs" />
+    <Compile Include="Windows\Storage\Streams\IRandomAccessStreamReferenceStatics.cs" />
+    <Compile Include="Windows\Storage\Streams\RandomAccessStreamReference.cs" />
+    <Compile Include="Windows\Storage\Streams\FileRandomAccessStream.cs" />
+    <Compile Include="Windows\Storage\Streams\FileInputStream.cs" />
+    <Compile Include="Windows\Storage\Streams\FileOutputStream.cs" />
+    <Compile Include="Windows\Storage\Streams\RandomAccessStreamOverStream.cs" />
+    <Compile Include="Windows\Storage\Streams\InputStreamOverStream.cs" />
+    <Compile Include="Windows\Storage\Streams\OutputStreamOverStream.cs" />
+    <Compile Include="Windows\Storage\Streams\InMemoryRandomAccessStream.cs" />
+    <Compile Include="Windows\Storage\Streams\IInputStream.cs" />
+    <Compile Include="Windows\Storage\Streams\IOutputStream.cs" />
+    <Compile Include="Windows\Storage\Streams\IRandomAccessStream.cs" />
+    <Compile Include="Windows\Storage\Streams\IRandomAccessStreamWithContentType.cs" />
+  </ItemGroup>
+</Project>

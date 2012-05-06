@@ -1,0 +1,1 @@
+E:\src\OpenWinRTRuntimeLib\Windows.ApplicationModel.Contacts.Provider\obj\x86\Debug\Windows.ApplicationModel.Contacts.Provider.csprojResolveAssemblyReference.cache

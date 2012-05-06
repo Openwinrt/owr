@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FAB4EBA-72FB-46FD-AF9A-71ECE84C0B7E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Media.PlayTo</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Storage.Streams" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToSource.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnection.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToSource.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnectionState.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToConnectionStateChangedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnectionStateChangedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToConnectionTransferredEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnectionTransferredEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnectionError.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToConnectionErrorEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToConnectionErrorEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToConnection.cs" />
+    <Compile Include="Windows\Media\PlayTo\ISourceChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\SourceChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlaybackRateChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlaybackRateChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\ICurrentTimeChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\CurrentTimeChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IMuteChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\MuteChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IVolumeChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\VolumeChangeRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToReceiver.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToReceiver.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToSourceSelectedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToSourceSelectedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToSourceDeferral.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToSourceDeferral.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToSourceRequest.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToSourceRequest.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToSourceRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToSourceRequestedEventArgs.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToManager.cs" />
+    <Compile Include="Windows\Media\PlayTo\PlayToManager.cs" />
+    <Compile Include="Windows\Media\PlayTo\IPlayToManagerStatics.cs" />
+  </ItemGroup>
+</Project>

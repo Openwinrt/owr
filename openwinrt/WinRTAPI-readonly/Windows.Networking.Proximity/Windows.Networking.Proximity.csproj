@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBDA5759-4C23-4CC8-BE4A-7AB6220FA8E7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Networking.Proximity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Storage.Streams" />
+    <Reference Include="Windows.Networking.Sockets" />
+    <Reference Include="Windows.Networking" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Networking\Proximity\IProximityMessage.cs" />
+    <Compile Include="Windows\Networking\Proximity\ProximityMessage.cs" />
+    <Compile Include="Windows\Networking\Proximity\MessageReceivedHandler.cs" />
+    <Compile Include="Windows\Networking\Proximity\ProximityDevice.cs" />
+    <Compile Include="Windows\Networking\Proximity\MessageTransmittedHandler.cs" />
+    <Compile Include="Windows\Networking\Proximity\DeviceArrivedEventHandler.cs" />
+    <Compile Include="Windows\Networking\Proximity\DeviceDepartedEventHandler.cs" />
+    <Compile Include="Windows\Networking\Proximity\IProximityDevice.cs" />
+    <Compile Include="Windows\Networking\Proximity\IProximityDeviceStatics.cs" />
+    <Compile Include="Windows\Networking\Proximity\ProximitySocketType.cs" />
+    <Compile Include="Windows\Networking\Proximity\ProximityStreamSocket.cs" />
+    <Compile Include="Windows\Networking\Proximity\TriggeredConnectState.cs" />
+    <Compile Include="Windows\Networking\Proximity\ITriggeredConnectionStateChangedEventArgs.cs" />
+    <Compile Include="Windows\Networking\Proximity\TriggeredConnectionStateChangedEventArgs.cs" />
+    <Compile Include="Windows\Networking\Proximity\IPeerInformation.cs" />
+    <Compile Include="Windows\Networking\Proximity\PeerInformation.cs" />
+    <Compile Include="Windows\Networking\Proximity\IConnectionRequestedEventArgs.cs" />
+    <Compile Include="Windows\Networking\Proximity\ConnectionRequestedEventArgs.cs" />
+    <Compile Include="Windows\Networking\Proximity\PeerDiscoveryTypes.cs" />
+    <Compile Include="Windows\Networking\Proximity\IPeerFinderStatics.cs" />
+    <Compile Include="Windows\Networking\Proximity\PeerFinder.cs" />
+    <Compile Include="Windows\Networking\Proximity\IProximityStreamSocket.cs" />
+  </ItemGroup>
+</Project>

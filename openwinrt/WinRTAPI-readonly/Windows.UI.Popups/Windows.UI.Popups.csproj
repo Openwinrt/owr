@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE2A3C7F-3F1D-4409-9012-06D233EC32D2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Popups</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Popups\IMessageDialog.cs" />
+    <Compile Include="Windows\UI\Popups\IMessageDialogFactory.cs" />
+    <Compile Include="Windows\UI\Popups\MessageDialog.cs" />
+    <Compile Include="Windows\UI\Popups\Placement.cs" />
+    <Compile Include="Windows\UI\Popups\UICommandInvokedHandler.cs" />
+    <Compile Include="Windows\UI\Popups\IUICommand.cs" />
+    <Compile Include="Windows\UI\Popups\IUICommandFactory.cs" />
+    <Compile Include="Windows\UI\Popups\UICommand.cs" />
+    <Compile Include="Windows\UI\Popups\UICommandSeparator.cs" />
+    <Compile Include="Windows\UI\Popups\IPopupMenu.cs" />
+    <Compile Include="Windows\UI\Popups\PopupMenu.cs" />
+  </ItemGroup>
+</Project>

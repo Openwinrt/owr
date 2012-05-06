@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6DDEC71-EBC4-42E8-96E9-82A2A05A107F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.ApplicationModel.Background</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundAccessStatus.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundExecutionManagerStatics.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundExecutionManager.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskCancellationReason.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskCanceledEventHandler.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskInstance.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskRegistration.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskDeferral.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskProgressEventHandler.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskProgressEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskCompletedEventHandler.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskCompletedEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskDeferral.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTask.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskRegistration.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskRegistrationStatics.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskBuilder.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundCondition.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskCompletedEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IBackgroundTaskProgressEventArgs.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\BackgroundTaskBuilder.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\SystemTriggerType.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\SystemConditionType.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ISystemTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ISystemTriggerFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\SystemTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ISystemCondition.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ISystemConditionFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\SystemCondition.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\INetworkOperatorNotificationTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\INetworkOperatorNotificationTriggerFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\NetworkOperatorNotificationTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ITimeTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\ITimeTriggerFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\TimeTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IMaintenanceTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IMaintenanceTriggerFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\MaintenanceTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\INetworkOperatorHotspotAuthenticationTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\NetworkOperatorHotspotAuthenticationTrigger.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\IPushNotificationTriggerFactory.cs" />
+    <Compile Include="Windows\ApplicationModel\Background\PushNotificationTrigger.cs" />
+  </ItemGroup>
+</Project>

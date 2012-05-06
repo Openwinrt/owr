@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9150B8A-015D-44D2-912D-BD59660E69AF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.ApplicationModel.Activation" />
+    <Reference Include="Windows.UI.Xaml.Controls.Primitives" />
+    <Reference Include="Windows.UI.Core" />
+    <Reference Include="Windows.UI.Xaml.Interop" />
+    <Reference Include="Windows.ApplicationModel.DataTransfer" />
+    <Reference Include="Windows.UI.Xaml.Data" />
+    <Reference Include="Windows.ApplicationModel.Core" />
+    <Reference Include="Windows.UI.Xaml.Media" />
+    <Reference Include="Windows.UI.Xaml.Media.Animation" />
+    <Reference Include="Windows.UI.Xaml.Input" />
+    <Reference Include="Windows.UI.Xaml.Automation.Peers" />
+    <Reference Include="Windows.UI.Xaml.Controls" />
+    <Reference Include="Windows.ApplicationModel" />
+    <Reference Include="Windows.UI.Xaml.Markup" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\IDependencyProperty.cs" />
+    <Compile Include="Windows\UI\Xaml\PropertyMetadata.cs" />
+    <Compile Include="Windows\UI\Xaml\IDependencyPropertyStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\DependencyProperty.cs" />
+    <Compile Include="Windows\UI\Xaml\IDependencyObject.cs" />
+    <Compile Include="Windows\UI\Xaml\IDependencyObjectFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\DependencyObject.cs" />
+    <Compile Include="Windows\UI\Xaml\IRoutedEvent.cs" />
+    <Compile Include="Windows\UI\Xaml\RoutedEvent.cs" />
+    <Compile Include="Windows\UI\Xaml\CreateDefaultValueCallback.cs" />
+    <Compile Include="Windows\UI\Xaml\PropertyChangedCallback.cs" />
+    <Compile Include="Windows\UI\Xaml\DependencyPropertyChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\TemplatePartAttribute.cs" />
+    <Compile Include="Windows\UI\Xaml\TemplateVisualStateAttribute.cs" />
+    <Compile Include="Windows\UI\Xaml\StyleTypedPropertyAttribute.cs" />
+    <Compile Include="Windows\UI\Xaml\ApplicationInitializationCallback.cs" />
+    <Compile Include="Windows\UI\Xaml\ApplicationInitializationCallbackParams.cs" />
+    <Compile Include="Windows\UI\Xaml\DurationType.cs" />
+    <Compile Include="Windows\UI\Xaml\TextWrapping.cs" />
+    <Compile Include="Windows\UI\Xaml\TextTrimming.cs" />
+    <Compile Include="Windows\UI\Xaml\Visibility.cs" />
+    <Compile Include="Windows\UI\Xaml\LineStackingStrategy.cs" />
+    <Compile Include="Windows\UI\Xaml\TextAlignment.cs" />
+    <Compile Include="Windows\UI\Xaml\FontCapitals.cs" />
+    <Compile Include="Windows\UI\Xaml\FontFraction.cs" />
+    <Compile Include="Windows\UI\Xaml\FontNumeralStyle.cs" />
+    <Compile Include="Windows\UI\Xaml\FontNumeralAlignment.cs" />
+    <Compile Include="Windows\UI\Xaml\FontVariants.cs" />
+    <Compile Include="Windows\UI\Xaml\FontEastAsianLanguage.cs" />
+    <Compile Include="Windows\UI\Xaml\FontEastAsianWidths.cs" />
+    <Compile Include="Windows\UI\Xaml\HorizontalAlignment.cs" />
+    <Compile Include="Windows\UI\Xaml\VerticalAlignment.cs" />
+    <Compile Include="Windows\UI\Xaml\ApplicationTheme.cs" />
+    <Compile Include="Windows\UI\Xaml\GridUnitType.cs" />
+    <Compile Include="Windows\UI\Xaml\FlowDirection.cs" />
+    <Compile Include="Windows\UI\Xaml\FocusState.cs" />
+    <Compile Include="Windows\UI\Xaml\IPointHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IPointHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\PointHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\ISizeHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\ISizeHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\SizeHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IRectHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IRectHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\RectHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Thickness.cs" />
+    <Compile Include="Windows\UI\Xaml\IThicknessHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IThicknessHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\ThicknessHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\CornerRadius.cs" />
+    <Compile Include="Windows\UI\Xaml\ICornerRadiusHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\ICornerRadiusHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\CornerRadiusHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Duration.cs" />
+    <Compile Include="Windows\UI\Xaml\IDurationHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IDurationHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\DurationHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\GridLength.cs" />
+    <Compile Include="Windows\UI\Xaml\IGridLengthHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\IGridLengthHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\GridLengthHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\DragEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\RoutedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\RoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\DependencyPropertyChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\ExceptionRoutedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\SizeChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualStateChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualStateChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\UnhandledExceptionEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\UnhandledExceptionEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\SuspendingEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\WindowActivatedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\WindowClosedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\WindowSizeChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\WindowVisibilityChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\IPropertyPath.cs" />
+    <Compile Include="Windows\UI\Xaml\IPropertyPathFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\PropertyPath.cs" />
+    <Compile Include="Windows\UI\Xaml\IUIElement.cs" />
+    <Compile Include="Windows\UI\Xaml\IUIElementOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\UIElement.cs" />
+    <Compile Include="Windows\UI\Xaml\IUIElementStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\IUIElementFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkElement.cs" />
+    <Compile Include="Windows\UI\Xaml\TriggerCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkElementOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkElementStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkElementFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\FrameworkElement.cs" />
+    <Compile Include="Windows\UI\Xaml\ITriggerBase.cs" />
+    <Compile Include="Windows\UI\Xaml\ITriggerBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\TriggerBase.cs" />
+    <Compile Include="Windows\UI\Xaml\IEventTrigger.cs" />
+    <Compile Include="Windows\UI\Xaml\TriggerActionCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\EventTrigger.cs" />
+    <Compile Include="Windows\UI\Xaml\ITriggerAction.cs" />
+    <Compile Include="Windows\UI\Xaml\ITriggerActionFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\TriggerAction.cs" />
+    <Compile Include="Windows\UI\Xaml\IDependencyPropertyChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IDragEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\DragEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IResourceDictionary.cs" />
+    <Compile Include="Windows\UI\Xaml\ResourceDictionary.cs" />
+    <Compile Include="Windows\UI\Xaml\IResourceDictionaryFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IRoutedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IExceptionRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\ExceptionRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IExceptionRoutedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IDebugSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\DebugSettings.cs" />
+    <Compile Include="Windows\UI\Xaml\IApplication.cs" />
+    <Compile Include="Windows\UI\Xaml\IApplicationOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\IApplicationStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Application.cs" />
+    <Compile Include="Windows\UI\Xaml\IApplicationFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkViewSource.cs" />
+    <Compile Include="Windows\UI\Xaml\FrameworkViewSource.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkView.cs" />
+    <Compile Include="Windows\UI\Xaml\FrameworkView.cs" />
+    <Compile Include="Windows\UI\Xaml\IWindow.cs" />
+    <Compile Include="Windows\UI\Xaml\IWindowStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Window.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\IFrameworkTemplateFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\FrameworkTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\IDataTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\IDataTemplateFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\DataTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\ISizeChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\SizeChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IStyle.cs" />
+    <Compile Include="Windows\UI\Xaml\Style.cs" />
+    <Compile Include="Windows\UI\Xaml\SetterBaseCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\IStyleFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\ISetterBase.cs" />
+    <Compile Include="Windows\UI\Xaml\ISetterBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\SetterBase.cs" />
+    <Compile Include="Windows\UI\Xaml\ISetter.cs" />
+    <Compile Include="Windows\UI\Xaml\ISetterFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Setter.cs" />
+    <Compile Include="Windows\UI\Xaml\ISetterBaseCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualState.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualState.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualStateGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualTransition.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualTransition.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualTransitionFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateManager.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateManagerOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateManagerProtected.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateManagerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\VisualStateManager.cs" />
+    <Compile Include="Windows\UI\Xaml\IVisualStateManagerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IDataTemplateKey.cs" />
+    <Compile Include="Windows\UI\Xaml\IDataTemplateKeyFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\DataTemplateKey.cs" />
+    <Compile Include="Windows\UI\Xaml\IPropertyMetadata.cs" />
+    <Compile Include="Windows\UI\Xaml\IPropertyMetadataStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\IPropertyMetadataFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\IMediaFailedRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\MediaFailedRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IUnhandledExceptionEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\IApplicationInitializationCallbackParams.cs" />
+    <Compile Include="Windows\UI\Xaml\IDispatcherTimer.cs" />
+    <Compile Include="Windows\UI\Xaml\IDispatcherTimerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\DispatcherTimer.cs" />
+  </ItemGroup>
+</Project>

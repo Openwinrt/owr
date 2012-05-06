@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A07E344-E1FD-456C-9E8B-97C04FC4D325}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Controls</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.UI.Xaml.Controls.Primitives" />
+    <Reference Include="Windows.UI.Xaml.Media" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Xaml.Media.Animation" />
+    <Reference Include="Windows.Media.Capture" />
+    <Reference Include="Windows.UI.Text" />
+    <Reference Include="Windows.UI.Xaml.Input" />
+    <Reference Include="Windows.UI.Xaml.Interop" />
+    <Reference Include="Windows.ApplicationModel.DataTransfer" />
+    <Reference Include="Windows.UI.Xaml.Navigation" />
+    <Reference Include="Windows.UI.Xaml.Data" />
+    <Reference Include="Windows.Media.PlayTo" />
+    <Reference Include="Windows.Media.Protection" />
+    <Reference Include="Windows.Storage.Streams" />
+    <Reference Include="Windows.UI.Xaml.Documents" />
+    <Reference Include="Windows.UI.Xaml.Markup" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IncrementalLoadingTrigger.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Orientation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\StretchDirection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ScrollBarVisibility.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ClickMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SelectionMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\VirtualizationMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListViewSelectionMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ScrollMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ZoomMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SnapPointsType.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\TextChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SelectionChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ContextMenuOpeningEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\CleanUpVirtualizedItemEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\NotifyEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\NotifyEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemClickEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\DragItemsStartingEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\DragItemsStartingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SemanticZoomViewChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SemanticZoomViewChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\INavigate.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFrame.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFrameStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFrameFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPage.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPageOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPageStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPageFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWebView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWebViewStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWebViewBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWebViewBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IAppBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IAppBarOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IAppBarStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IProgressRing.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IProgressRingStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToggleSwitch.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToggleSwitchOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToggleSwitchStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IButtonFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICheckBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICheckBoxFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBoxOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBoxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBoxFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStyleSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStyleSelectorOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStyleSelectorFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\StyleSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IDataTemplateSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IDataTemplateSelectorOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IDataTemplateSelectorFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\DataTemplateSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupStyleSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\GroupStyle.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupStyleSelectorOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupStyleSelectorFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\GroupStyleSelector.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupStyle.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGroupStyleFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListBoxItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListBoxItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBoxItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IComboBoxItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFlipView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFlipViewFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFlipViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IFlipViewItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IHyperlinkButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IHyperlinkButtonFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListBoxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListBoxFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IMediaPlayer.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IMediaPlayerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IMediaPlayerFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRadioButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRadioButtonStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRadioButtonFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IScrollContentPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IScrollViewer.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ScrollViewerViewChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IScrollViewerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISlider.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISliderStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISliderFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IProgressBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IProgressBarStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IProgressBarFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\UIElementCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPanelStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IImage.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IImageStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICanvas.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICanvasStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICanvasFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextBlock.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextBlockStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICaptureElement.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICaptureElementStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichTextBlockOverflow.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichTextBlockOverflowStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichTextBlock.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichTextBlockStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IMediaElement.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IMediaElementStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\INotifyEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStackPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStackPanelStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IStackPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICarouselPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICarouselPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextBoxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextBoxFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichEditBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichEditBoxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRichEditBoxFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ITextChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPasswordBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IPasswordBoxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRowDefinition.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IRowDefinitionStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IColumnDefinition.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IColumnDefinitionStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGrid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RowDefinitionCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ColumnDefinitionCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISwapChainBackgroundPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISwapChainBackgroundPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IUserControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IUserControlStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IUserControlFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemContainerGenerator.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsControlOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsControlStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsControlFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemContainerGenerator.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingPanelOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingPanelProtected.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingStackPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingStackPanelOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingStackPanelStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVirtualizingStackPanelFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVariableSizedWrapGrid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IVariableSizedWrapGridStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IViewbox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IViewboxStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IBorder.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IBorderStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentControlOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentControlStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentControlFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentPresenterOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentPresenterStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContentPresenterFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsPanelTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemsPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISelectionChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISelectionChangedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IContextMenuEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ICleanUpVirtualizedItemEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewBaseStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IItemClickEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridViewItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewItemFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IListViewFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IGridViewFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWrapGrid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IWrapGridStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToolTip.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToolTipStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToolTipFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToolTipService.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IToolTipServiceStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ToolTipService.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IDragItemsStartingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISemanticZoom.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISemanticZoomInformation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SemanticZoomLocation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISemanticZoomStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISemanticZoomLocation.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ISemanticZoomViewChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IScrollViewerViewChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RowDefinition.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ColumnDefinition.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\TextChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SelectionChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ContextMenuEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\CleanUpVirtualizedItemEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemClickEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\WebView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Panel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Image.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Canvas.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\TextBlock.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\CaptureElement.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RichTextBlockOverflow.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RichTextBlock.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\MediaElement.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\StackPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Grid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SwapChainBackgroundPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\VirtualizingPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\CarouselPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\VirtualizingStackPanel.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\VariableSizedWrapGrid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Viewbox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Border.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ContentPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ScrollContentPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemsPresenter.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\WrapGrid.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemsPanelTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\WebViewBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControlOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControlProtected.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Control.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ProgressRing.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ToggleSwitch.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\MediaPlayer.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Slider.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ProgressBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\TextBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RichEditBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\PasswordBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\UserControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Page.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ItemsControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ComboBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\FlipView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ContentControl.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Frame.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\AppBar.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\Button.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\CheckBox.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\GroupItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListBoxItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ComboBoxItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\FlipViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\HyperlinkButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\RadioButton.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ScrollViewer.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListViewBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\GridViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListViewItem.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ListView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\GridView.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ToolTip.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\SemanticZoom.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControlStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControlFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\IControlTemplate.cs" />
+    <Compile Include="Windows\UI\Xaml\Controls\ControlTemplate.cs" />
+  </ItemGroup>
+</Project>

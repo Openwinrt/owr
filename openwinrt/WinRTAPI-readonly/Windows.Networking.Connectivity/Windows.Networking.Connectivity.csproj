@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3428D3D-8646-4201-A041-10FED315CF93}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.Networking.Connectivity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.Networking" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkAdapter.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkCostType.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkConnectivityLevel.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkTypes.cs" />
+    <Compile Include="Windows\Networking\Connectivity\RoamingStates.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IDataUsage.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IDataPlanUsage.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IDataPlanStatus.cs" />
+    <Compile Include="Windows\Networking\Connectivity\DataPlanUsage.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IConnectionCost.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IConnectionProfile.cs" />
+    <Compile Include="Windows\Networking\Connectivity\ConnectionCost.cs" />
+    <Compile Include="Windows\Networking\Connectivity\DataPlanStatus.cs" />
+    <Compile Include="Windows\Networking\Connectivity\DataUsage.cs" />
+    <Compile Include="Windows\Networking\Connectivity\ILanIdentifierData.cs" />
+    <Compile Include="Windows\Networking\Connectivity\ILanIdentifier.cs" />
+    <Compile Include="Windows\Networking\Connectivity\LanIdentifierData.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkStatusChangedEventHandler.cs" />
+    <Compile Include="Windows\Networking\Connectivity\INetworkInformationStatics.cs" />
+    <Compile Include="Windows\Networking\Connectivity\ConnectionProfile.cs" />
+    <Compile Include="Windows\Networking\Connectivity\LanIdentifier.cs" />
+    <Compile Include="Windows\Networking\Connectivity\ProxyConfiguration.cs" />
+    <Compile Include="Windows\Networking\Connectivity\INetworkItem.cs" />
+    <Compile Include="Windows\Networking\Connectivity\INetworkAdapter.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkItem.cs" />
+    <Compile Include="Windows\Networking\Connectivity\IProxyConfiguration.cs" />
+    <Compile Include="Windows\Networking\Connectivity\NetworkInformation.cs" />
+  </ItemGroup>
+</Project>

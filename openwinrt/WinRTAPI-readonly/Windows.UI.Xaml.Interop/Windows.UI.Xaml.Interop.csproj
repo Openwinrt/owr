@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA506C0C-F570-4BC4-AFF6-0B4969D291AE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Interop</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.Foundation" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\IBindableIterator.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\IBindableIterable.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\IBindableVectorView.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\IBindableVector.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\NotifyCollectionChangedAction.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\NotifyCollectionChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\NotifyCollectionChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\INotifyCollectionChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\INotifyCollectionChangedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\INotifyCollectionChanged.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\TypeKind.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\TypeName.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\BindableVectorChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Interop\IBindableObservableVector.cs" />
+  </ItemGroup>
+</Project>

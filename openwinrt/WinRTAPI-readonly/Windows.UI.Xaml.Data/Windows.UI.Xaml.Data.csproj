@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CADEE98-CDAC-4DAC-AD83-57BF6241E8C0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Data</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI.Xaml.Interop" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\LoadMoreItemsResult.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\BindingMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\RelativeSourceMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\CurrentChangingEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\CurrentChangingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\PropertyChangedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\PropertyChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IPropertyChangedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IPropertyChangedEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\INotifyPropertyChanged.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IRelativeSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IRelativeSourceFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\RelativeSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IValueConverter.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBindingBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\BindingBase.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBindingBaseFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBinding.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBindingFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\Binding.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICurrentChangingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICurrentChangingEventArgsFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICollectionView.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICollectionViewGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICollectionViewSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICollectionViewSourceStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\CollectionViewSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBindingOperations.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\IBindingOperationsStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\BindingOperations.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICustomProperty.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICustomPropertyProvider.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ISupportPlaceholder.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ISupportIncrementalLoading.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\ICollectionViewFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Data\BindableAttribute.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDD73330-2E16-4D60-BB52-F76CB199C502}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Windows.UI.Xaml.Media</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Windows.UI.Xaml" />
+    <Reference Include="Windows.Foundation" />
+    <Reference Include="Windows.UI" />
+    <Reference Include="Windows.UI.Xaml.Media.Media3D" />
+    <Reference Include="Windows.UI.Xaml.Markup" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\FillRule.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\SweepDirection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GradientSpreadMethod.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ColorInterpolationMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\BrushMappingMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\AlignmentX.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\AlignmentY.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Stretch.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\StyleSimulations.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PenLineCap.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PenLineJoin.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\MediaElementState.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\AudioCategory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\AudioDeviceType.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\MediaCanPlayResponse.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Video3DMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Matrix.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrixHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrixHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\MatrixHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TimelineMarkerRoutedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\RateChangedRoutedEventHandler.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\DoubleCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PointCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeneralTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeneralTransformOverrides.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GeneralTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeneralTransformFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Transform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITransformFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathSegmentFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PathSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBrushFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Brush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITileBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITileBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITileBrushFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TileBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeometryStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Geometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeometryFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IImageSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IImageSourceFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ImageSource.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRotateTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRotateTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\RotateTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IScaleTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IScaleTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ScaleTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ISkewTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ISkewTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\SkewTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITranslateTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITranslateTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TranslateTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TransformCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITransformGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITransformGroupStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TransformGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrixTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrixTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\MatrixTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICompositeTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICompositeTransformStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\CompositeTransform.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILineSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILineSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\LineSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBezierSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\BezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IQuadraticBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IQuadraticBezierSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\QuadraticBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IArcSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IArcSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ArcSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyLineSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyLineSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PolyLineSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyBezierSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PolyBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyQuadraticBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPolyQuadraticBezierSegmentStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PolyQuadraticBezierSegment.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PathSegmentCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathFigure.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathFigureStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PathFigure.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PathFigureCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPathGeometryStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PathGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IEllipseGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IEllipseGeometryStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\EllipseGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRectangleGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\RectangleGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRectangleGeometryStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILineGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILineGeometryStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\LineGeometry.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GeometryCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeometryGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGeometryGroupStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GeometryGroup.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ISolidColorBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ISolidColorBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ISolidColorBrushFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\SolidColorBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGradientStop.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGradientStopStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GradientStop.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GradientStopCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGradientBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGradientBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IGradientBrushFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\GradientBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILinearGradientBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILinearGradientBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ILinearGradientBrushFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\LinearGradientBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IImageBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IImageBrushStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ImageBrush.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IFontFamily.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IFontFamilyFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\FontFamily.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITimelineMarkerRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TimelineMarkerRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITimelineMarker.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TimelineMarker.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ITimelineMarkerStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\TimelineMarkerCollection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRateChangedRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\RateChangedRoutedEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IRenderingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\RenderingEventArgs.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IProjection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Projection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IProjectionFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPlaneProjection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IPlaneProjectionStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\PlaneProjection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrix3DProjection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IMatrix3DProjectionStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\Matrix3DProjection.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICacheMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\CacheMode.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICacheModeFactory.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IBitmapCache.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\BitmapCache.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IVisualTreeHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\IVisualTreeHelperStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\VisualTreeHelper.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICompositionTarget.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\ICompositionTargetStatics.cs" />
+    <Compile Include="Windows\UI\Xaml\Media\CompositionTarget.cs" />
+  </ItemGroup>
+</Project>
