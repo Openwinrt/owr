@@ -1,0 +1,7 @@
+#! /bin/sh
+# Automatically generated test.  DO NOT EDIT BY HAND!
+am_create_testdir=empty depmode=msvcmsys depcomp_with_libtool=yes
+required="cl mingw libtoolize"
+. ./defs || Exit 1
+plan_ 28
+. "$am_testauxdir/depcomp.sh"; exit "$?"
