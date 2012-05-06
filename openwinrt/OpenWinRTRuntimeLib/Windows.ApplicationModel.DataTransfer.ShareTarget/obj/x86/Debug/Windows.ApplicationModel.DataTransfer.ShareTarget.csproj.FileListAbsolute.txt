@@ -1,1 +1,0 @@
-E:\src\OpenWinRTRuntimeLib\Windows.ApplicationModel.DataTransfer.ShareTarget\obj\x86\Debug\Windows.ApplicationModel.DataTransfer.ShareTarget.csprojResolveAssemblyReference.cache

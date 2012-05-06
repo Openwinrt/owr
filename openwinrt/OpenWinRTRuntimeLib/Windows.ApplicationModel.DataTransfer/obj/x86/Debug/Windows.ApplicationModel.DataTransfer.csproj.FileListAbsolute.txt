@@ -1,1 +1,0 @@
-E:\src\OpenWinRTRuntimeLib\Windows.ApplicationModel.DataTransfer\obj\x86\Debug\Windows.ApplicationModel.DataTransfer.csprojResolveAssemblyReference.cache
