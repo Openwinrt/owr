@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCFC2949-C3CC-463E-921D-E238C9303275}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Runtime</RootNamespace>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Locale.cs" />
+    <Compile Include="System\Attribute.cs" />
+    <Compile Include="System\AttributeTargets.cs" />
+    <Compile Include="System\AttributeUsageAttribute.cs" />
+    <Compile Include="System\Byte.cs" />
+    <Compile Include="System\Char.cs" />
+    <Compile Include="System\EventHandler.cs" />
+    <Compile Include="System\Exception.cs" />
+    <Compile Include="System\FlagsAttribute.cs" />
+    <Compile Include="System\Globalization\DateTimeStyles.cs" />
+    <Compile Include="System\Globalization\NumberStyles.cs" />
+    <Compile Include="System\Globalization\TimeSpanStyles.cs" />
+    <Compile Include="System\Guid.cs" />
+    <Compile Include="System\IComparable!1.cs" />
+    <Compile Include="System\IComparable.cs" />
+    <Compile Include="System\IDisposable.cs" />
+    <Compile Include="System\IEquatable!1.cs" />
+    <Compile Include="System\IFormatProvider.cs" />
+    <Compile Include="System\IFormattable.cs" />
+    <Compile Include="System\Int16.cs" />
+    <Compile Include="System\Int32.cs" />
+    <Compile Include="System\Int64.cs" />
+    <Compile Include="System\IntPtr.cs" />
+    <Compile Include="System\NumberFormatter.cs" />
+    <Compile Include="System\Object.cs" />
+    <Compile Include="System\Runtime\CompilerServices\_Exception.cs" />
+    <Compile Include="System\Runtime\CompilerServices\MethodImplAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\MethodImplOptions.cs" />
+    <Compile Include="System\Runtime\CompilerServices\_Attribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\LayoutKind.cs" />
+    <Compile Include="System\Runtime\InteropServices\StructLayoutAttribute.cs" />
+    <Compile Include="System\Single.cs" />
+    <Compile Include="System\String.cs" />
+    <Compile Include="System\StringSplitOptions.cs" />
+    <Compile Include="System\Text\StringBuilder.cs" />
+    <Compile Include="System\Type.cs" />
+    <Compile Include="System\UInt16.cs" />
+    <Compile Include="System\UInt32.cs" />
+    <Compile Include="System\UInt64.cs" />
+    <Compile Include="System\UIntPtr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

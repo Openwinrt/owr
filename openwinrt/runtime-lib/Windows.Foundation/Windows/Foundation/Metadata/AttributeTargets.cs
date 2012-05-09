@@ -1,6 +1,8 @@
-﻿namespace Windows.Foundation.Metadata
+﻿    using System;
+
+namespace Windows.Foundation.Metadata
 {
-    using System;
+
 
     [Flags, Version(0x6020000)]
     public enum AttributeTargets : uint

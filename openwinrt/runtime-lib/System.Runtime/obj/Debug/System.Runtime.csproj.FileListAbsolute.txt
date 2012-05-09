@@ -1,0 +1,10 @@
+X:\openwinrt\runtime-lib\System.Runtime\bin\Debug\System.Runtime.dll
+X:\openwinrt\runtime-lib\System.Runtime\bin\Debug\System.Runtime.pdb
+X:\openwinrt\runtime-lib\System.Runtime\bin\Debug\System.Runtime.pri
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\System.Runtime.dll
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\System.Runtime.pdb
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\priconfig.xml
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\layout.resfiles
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\resources.resfiles
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\pri.resfiles
+X:\openwinrt\runtime-lib\System.Runtime\obj\Debug\LanguageQualifiers.txt

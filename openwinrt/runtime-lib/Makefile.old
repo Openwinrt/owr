@@ -1,0 +1,12 @@
+COMPILER=gmcs
+FLAGS= 
+
+all: owr.dll
+
+owr.dll: helloWorld.cs
+	$(COMPILER) helloWorld.cs
+
+clean:
+	rm -f owr.dll
+
+.PHONY: all clean

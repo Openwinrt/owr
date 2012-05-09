@@ -1,0 +1,15 @@
+X:\openwinrt\runtime-lib\Windows.Foundation\bin\Debug\Windows.Foundation.dll
+X:\openwinrt\runtime-lib\Windows.Foundation\bin\Debug\Windows.Foundation.pdb
+X:\openwinrt\runtime-lib\Windows.Foundation\bin\Debug\Windows.Foundation.pri
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\Windows.Foundation.dll
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\Windows.Foundation.pdb
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\priconfig.xml.intermediate
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\layout.resfiles.intermediate
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\resources.resfiles.intermediate
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\pri.resfiles.intermediate
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\priconfig.xml
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\layout.resfiles
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\resources.resfiles
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\pri.resfiles
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\LanguageQualifiers.txt
+X:\openwinrt\runtime-lib\Windows.Foundation\obj\Debug\Windows.Foundation.csprojResolveAssemblyReference.cache

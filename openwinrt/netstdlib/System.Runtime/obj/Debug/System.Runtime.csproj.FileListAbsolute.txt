@@ -1,0 +1,5 @@
+X:\openwinrt\netstdlib\System.Runtime\bin\Debug\System.Runtime.dll
+X:\openwinrt\netstdlib\System.Runtime\bin\Debug\System.Runtime.pdb
+X:\openwinrt\netstdlib\System.Runtime\obj\Debug\System.Runtime.csprojResolveAssemblyReference.cache
+X:\openwinrt\netstdlib\System.Runtime\obj\Debug\System.Runtime.dll
+X:\openwinrt\netstdlib\System.Runtime\obj\Debug\System.Runtime.pdb
