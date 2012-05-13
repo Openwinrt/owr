@@ -55,7 +55,7 @@ namespace System
         {
 
                //return (int)~this  | (int) this; 
-            return 257 * (m_value + 7);
+            return 42589 * (m_value + 7);
               //  2654435761 * m_value;
         }
 

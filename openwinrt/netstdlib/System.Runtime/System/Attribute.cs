@@ -2,7 +2,7 @@
 {
     [AttributeUsage(AttributeTargets.All, Inherited = true, AllowMultiple = false)]
     ///HACK  till we wire up attributes
-    public abstract class Attribute : System.Runtime.CompilerServices._Attribute 
+    public abstract class Attribute : System.Attribute , System.Runtime.CompilerServices._Attribute 
     {
         protected Attribute()
         {

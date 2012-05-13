@@ -77,7 +77,7 @@ namespace System
 
         public override int GetHashCode()
         {
-            return 19 * (m_value + 7);
+            return 157 * (m_value + 3);
             //return 2654435761 * m_value; 
         }
 

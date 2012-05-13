@@ -7,8 +7,11 @@
     [StructLayout(LayoutKind.Sequential)]
     public struct Int64 : IComparable, IComparable<long>, IEquatable<long>, IFormattable
     {
-        public const long MaxValue = 0x7fffffffffffffffL;
-        public const long MinValue = -9223372036854775808L;
+        public const long MaxValue = 0x7fffffffffffffff;
+        public const long MinValue = -9223372036854775808;
+
+        internal long m_value;
+
         public int CompareTo(long value)
         {
             return 0;

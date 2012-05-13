@@ -1,7 +1,9 @@
-﻿namespace System
-{
-    using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
+
+namespace System
+{
+   
     public delegate void EventHandler(object sender, EventArgs e);
 }
 
