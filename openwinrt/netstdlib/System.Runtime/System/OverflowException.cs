@@ -2,22 +2,25 @@
 {
     public class OverflowException : ArithmeticException
     {
+        const int Result = unchecked((int)0x80131516);
+
+        // Constructors
         public OverflowException()
+            : base(Locale.GetText("Number overflow."))
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public OverflowException(string message)
+            : base(message)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public OverflowException(string message, Exception innerException)
+            : base(message, innerException)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
     }
 }

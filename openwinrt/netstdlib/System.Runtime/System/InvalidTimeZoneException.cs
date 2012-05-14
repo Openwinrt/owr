@@ -3,22 +3,17 @@
     public class InvalidTimeZoneException : Exception
     {
         public InvalidTimeZoneException()
-        {
-            base..ctor();
-            return;
-        }
+            : base()
+        { }
 
         public InvalidTimeZoneException(string message)
-        {
-            base..ctor();
-            return;
-        }
+            : base(message)
+        { }
 
         public InvalidTimeZoneException(string message, Exception innerException)
-        {
-            base..ctor();
-            return;
-        }
+            : base(message, innerException)
+        { }
+
     }
 }
 

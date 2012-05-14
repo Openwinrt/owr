@@ -2,22 +2,25 @@
 {
     public class OutOfMemoryException : Exception
     {
+        const int Result = unchecked((int)0x8007000E);
+
+        // Constructors
         public OutOfMemoryException()
+            : base(Locale.GetText("Out of memory."))
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public OutOfMemoryException(string message)
+            : base(message)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public OutOfMemoryException(string message, Exception innerException)
+            : base(message, innerException)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
     }
 }

@@ -2,22 +2,25 @@
 {
     public class MemberAccessException : Exception
     {
+        const int Result = unchecked((int)0x8013151A);
+
         public MemberAccessException()
+            : base(Locale.GetText("Cannot access a class member."))
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public MemberAccessException(string message)
+            : base(message)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
+    
         public MemberAccessException(string message, Exception inner)
+            : base(message, inner)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
     }
 }

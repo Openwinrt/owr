@@ -2,39 +2,42 @@
 {
     public class ObjectDisposedException : InvalidOperationException
     {
-        public ObjectDisposedException(string objectName)
-        {
-            base..ctor();
-            return;
-        }
+        // Does not override the HResult from InvalidOperationException
 
-        public ObjectDisposedException(string message, Exception innerException)
+        private string obj_name;
+        private string msg;
+
+        // Constructors
+        public ObjectDisposedException(string objectName)
+            : base(Locale.GetText("The object was used after being disposed."))
         {
-            base..ctor();
-            return;
+            obj_name = objectName;
+            msg = Locale.GetText("The object was used after being disposed.");
         }
 
         public ObjectDisposedException(string objectName, string message)
+            : base(message)
         {
-            base..ctor();
-            return;
+            obj_name = objectName;
+            msg = message;
         }
 
+        public ObjectDisposedException(string message, Exception innerException)
+            : base(message, innerException)
+        {
+        }
+
+        // Properties
         public override string Message
         {
-            get
-            {
-                return null;
-            }
+            get { return msg; }
         }
 
         public string ObjectName
         {
-            get
-            {
-                return null;
-            }
+            get { return obj_name; }
         }
+
     }
 }
 

@@ -1,9 +1,8 @@
 ﻿//
-// System.NotSupportedException.cs
+// System.ArgumentException.cs
 //
 // Authors:
 //   Joe Shaw (joe@ximian.com)
-//   Duncan Mak (duncan@ximian.com)
 //   Andreas Nahr (ClassDevelopment@A-SoftTech.com)
 //
 // (C) 2001 Ximian, Inc.  http://www.ximian.com
@@ -32,30 +31,69 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+
 namespace System
 {
-    public class NotSupportedException : Exception
+    public class ArgumentException : Exception
     {
-        const int Result = unchecked((int)0x80131515);
+        const int Result = unchecked((int)0x80070057);
 
-        // Constructors
-        public NotSupportedException()
-            : base(Locale.GetText("Operation is not supported."))
+        private string param_name;
+
+        public ArgumentException()
+            : base(Locale.GetText("Value does not fall within the expected range."))
         {
             HResult = Result;
         }
 
-        public NotSupportedException(string message)
+
+        public ArgumentException(string message)
             : base(message)
         {
             HResult = Result;
         }
 
-        public NotSupportedException(string message, Exception innerException)
+        public ArgumentException(string message, Exception innerException)
             : base(message, innerException)
         {
             HResult = Result;
         }
+
+        public ArgumentException(string message, string paramName)
+            : base(message)
+        {
+            this.param_name = paramName;
+            HResult = Result;
+        }
+
+        public ArgumentException(string message, string paramName, Exception innerException)
+            : base(message, innerException)
+        {
+            this.param_name = paramName;
+            HResult = Result;
+        }
+
+        // Properties
+        public virtual string ParamName
+        {
+            get
+            {
+                return param_name;
+            }
+        }
+
+        public override string Message
+        {
+            get
+            {
+                if (ParamName != null && ParamName.Length != 0)
+                    return base.Message + Environment.NewLine
+                        + Locale.GetText("Parameter name: ")
+                        + ParamName;
+                return base.Message;
+            }
+        }
+
     }
 }
 

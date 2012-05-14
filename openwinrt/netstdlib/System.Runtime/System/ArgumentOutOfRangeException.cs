@@ -1,5 +1,5 @@
 ﻿//
-// System.NotSupportedException.cs
+// System.ArgumentOutOfRangeException.cs
 //
 // Authors:
 //   Joe Shaw (joe@ximian.com)
@@ -32,29 +32,66 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+
 namespace System
 {
-    public class NotSupportedException : Exception
+    public class ArgumentOutOfRangeException : ArgumentException
     {
-        const int Result = unchecked((int)0x80131515);
+        const int Result = unchecked((int)0x80131502);
+
+        private object actual_value;
 
         // Constructors
-        public NotSupportedException()
-            : base(Locale.GetText("Operation is not supported."))
+        public ArgumentOutOfRangeException()
+            : base(Locale.GetText("Argument is out of range."))
         {
             HResult = Result;
         }
 
-        public NotSupportedException(string message)
-            : base(message)
+        public ArgumentOutOfRangeException(string paramName)
+            : base(Locale.GetText("Argument is out of range."), paramName)
         {
             HResult = Result;
         }
 
-        public NotSupportedException(string message, Exception innerException)
+
+
+        public ArgumentOutOfRangeException(string message, Exception innerException)
             : base(message, innerException)
         {
             HResult = Result;
+        }
+
+        public ArgumentOutOfRangeException(string paramName, string message)
+            : base(message, paramName)
+        {
+            HResult = Result;
+        }
+
+        public ArgumentOutOfRangeException(string paramName, object actualValue, string message)
+            : base(message, paramName)
+        {
+            this.actual_value = actualValue;
+            HResult = Result;
+        }
+        // Properties
+        public virtual object ActualValue
+        {
+            get
+            {
+                return actual_value;
+            }
+        }
+
+        public override string Message
+        {
+            get
+            {
+                string basemsg = base.Message;
+                if (actual_value == null)
+                    return basemsg;
+                return basemsg + Environment.NewLine + actual_value;
+            }
         }
     }
 }

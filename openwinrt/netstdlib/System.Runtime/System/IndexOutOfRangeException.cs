@@ -2,22 +2,20 @@
 {
     public sealed class IndexOutOfRangeException : Exception
     {
+        // Constructors
         public IndexOutOfRangeException()
+            : base(Locale.GetText("Array index is out of range."))
         {
-            base..ctor();
-            return;
         }
 
         public IndexOutOfRangeException(string message)
+            : base(message)
         {
-            base..ctor();
-            return;
         }
 
         public IndexOutOfRangeException(string message, Exception innerException)
+            : base(message, innerException)
         {
-            base..ctor();
-            return;
         }
     }
 }

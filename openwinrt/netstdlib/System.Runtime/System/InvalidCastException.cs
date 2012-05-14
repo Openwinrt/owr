@@ -1,29 +1,32 @@
 ﻿namespace System
 {
-    public class InvalidCastException : Exception
+    public class InvalidCastException : Exception //SystemException
     {
+        const int Result = unchecked((int)0x80004002);
+
+        // Constructors
         public InvalidCastException()
+            : base(Locale.GetText("Cannot cast from source type to destination type."))
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public InvalidCastException(string message)
+            : base(message)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public InvalidCastException(string message, Exception innerException)
+            : base(message, innerException)
         {
-            base..ctor();
-            return;
+            HResult = Result;
         }
 
         public InvalidCastException(string message, int errorCode)
+            : base(message)
         {
-            base..ctor();
-            return;
+            HResult = errorCode;
         }
     }
 }
